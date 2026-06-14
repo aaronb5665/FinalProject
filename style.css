@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* the '*' means it will affect all the elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #243e63;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+}
+
+img {
+     max-width: 40px; 
+    /* overflow-clip-margin: content-box;
+    overflow: clip; */
+
+}
+
+.row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* this ".nav__container" holds the whole navigational section */
+.nav__row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+} 
+
+ .nav__logo--img {
+    
+    height: 40px;
+    width: 40px;
+} 
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding-bottom: 4px;
+   
+}
+
+.nav__logo--title {
+    font-weight: 900;
+    font-size: 24px;
+    margin-left: 12px;
+    padding: 2px;
+    letter-spacing: 0.6px;
+}
+
+/* this places everything side by side */
+.nav__links {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 900;
+    padding-top: 4px;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    /* transition: all 300ms; */
+}
+
+/* ths section of code is for the underlining position */
+.nav__link::after {
+    content: "";    /* Necessary for the pseudo-element to display */
+    display: block;
+    width: 100%;
+    height: 2px;background-color: purple;
+    position: absolute;
+    left: 0;
+    bottom: -.5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav__link {
+    margin: 0 32px;
+}
+
+/* this hover link positions the underline up or down on the 'Y' axis */
+.nav__link:hover {
+    padding: 8px;
+}
+
+/* this hover determines the langth of the line a long the 'X' asis */
+.nav__link:hover::after {
+    transform: scaleX(1);  
+}
+
+/* this sets up the 'Sign Up' button */
+.nav__link--primary {
+    margin: 0;
+    padding: 10px 32px;
+    margin-top: 2px;
+    border-radius: 9999px;
+    color: #fff;
+    background-color: #6415ff;
+    line-height: 1.5;
+    border: none;
+    width: auto;
+    transition: all 300ms ease;
+}
+
+/* this will remove the underline from the 'Sign Up' button */
+.nav__link--primary::after {
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn__menu .fa-bars-staggered {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #6415ff !important;
+}
+
+/* .fa-solid {
+    color: purple !important;
+} */
