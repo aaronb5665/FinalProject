@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/c29aec6c69.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/c29aec6c69.js" crossorigin="anonymous"></script> -->
+    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -24,11 +27,74 @@
                     <li><a href="#" class="nav__link">Login</a></li>
                     <li><a href="sign-up.html" class="nav__link nav__link--primary">Sign Up</a></li>
                 </ul>
-                <button class="btn__menu"><i class="fa-solid fa-bars-staggered"></i></button>
+                <!-- this button works with the url link above with the 'https' -->
+                <!-- <button class="btn__menu" id="menu" onclick="openMenu()"><i class="fa-solid fa-bars-staggered"></i></button> -->
+                 <div class="btn__menu menu__X" id="menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                 </div>
                     
-                <div class="menu__backdrop"?></div>
+                <div class="menu__backdrop" id="menu">
+                    <button class="btn__menu btn__menu--close" id="close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">HOME</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">FEATURES</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">WORKS</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">STEPS</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">VALUES</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">PRICING</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">TESTIMONIALS</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">CONTACTS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+    </section>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="header__description">
+                    <h1>
+                        Beautiful React Templates <span class="purple">for you.</span>
+                    </h1>
+                    <p class="hearder__descriptioin--para">
+                        Our templates are easy to setup, understand and 
+                        customize.  Fully modular components with a variety of pages and 
+                        components
+                    </p>
+                    <div class="header__email">
+                        <input type="email" class="header__email--input" placeholder="Your E-mail Address">
+                        <button class="header__email--btn">Get Started</button>
+                    </div>
+                    <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+                    <img src="./assets/customers-logo-strip.png" class="header__customers">
+                </div>
+                <figure class="header__img--wrapper"> 
+                    <img src="./assets/design-illustration.svg" class="header__img">
+                </figure>
+            </div>
+        </div>
+    </header>
+    <!-- this is the feature section of the website -->
+    <section>
+
     </section>
     
 </body>
