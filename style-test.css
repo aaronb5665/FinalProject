@@ -649,17 +649,14 @@ PRICING
 	position: relative;
 	margin: 4rem;		/* same as 64px 16px = 1rem*/
 	display: flex;
-	width: calc(100% / 3);
+    flex-direction: column;
+	width: 100%;
 	max-width: 24rem;	/* same as 384px */
-	flex-direction: column;
 	border-radius: 0.5rem;
-	background-color: rgb(255 255 255);
-	padding-left: 2rem;
-	padding-right: 2rem;
-	margin-right: 2rem;
-	padding-top: 0.5rem;
+	background-color: white;
+	padding: 2rem;
 	text-align: center;
-	color: rgb(26 32 44);	
+	color: rgb(26, 32, 44);	
 }
 	
 /* this is to change the color of the middle card */
