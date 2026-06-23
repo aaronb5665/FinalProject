@@ -1424,10 +1424,6 @@ footer {
         margin-top: 40px;
     }
 
-    .plan__price {
-        font-size: 12vh;
-    }
-
     .quality__description, .quality__img--wrapper,
     .steps__description, .steps__img--wrapper,
     .values__description, .values__img,
@@ -1559,6 +1555,10 @@ footer {
 
     .steps__list {
         margin-top: 48px;
+    }
+
+    .plan__price {
+        font-size: 8vh;
     }
 
     .testimonial__para {
